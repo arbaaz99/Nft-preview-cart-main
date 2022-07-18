@@ -1,0 +1,227 @@
+/* fonts
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif; */
+/* 
+## Colors
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    width: 335px;
+    border-radius: 15px;
+}
+
+.main {
+    box-shadow: 0px 8px 10px hsl(215, 32%, 27%),
+        -10px 8px 15px hsl(215, 32%, 27%),
+        10px 8px 15px hsl(215, 32%, 27%);
+    margin: 0px auto;
+
+}
+
+.main {
+    margin-top: 65px;
+    margin-bottom: 70PX;
+}
+
+.main .first-image {
+    object-fit: cover;
+    margin: 20px;
+    width: 280px;
+    height: 285px;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 280px;
+    height: 285px;
+    margin-top: 21px;
+    margin-left: 21px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #00FFF74F;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.container:hover .overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 1 !important;
+}
+
+.container .overlay img {
+    opacity: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.nft-details {
+    margin-left: 22px;
+    margin-right: 30px;
+
+}
+
+.Equilibrium a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+
+}
+
+.name a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+.Equilibrium {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
+
+.nft-details .para {
+    padding-top: 17px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox .etherum {
+    display: flex;
+}
+
+.flexbox .duration {
+    display: flex;
+}
+
+.flexbox .etherum {
+    padding-top: 17px;
+    font-size: 17px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: hsl(178, 100%, 50%);
+}
+
+.etherum .price {
+    padding-left: 5px;
+}
+
+.duration .time {
+    padding-left: 5px;
+}
+
+.duration {
+    padding-top: 17px;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+
+.line {
+    border-top: 1px solid hsl(0, 0%, 100%);
+    opacity: 0.2;
+}
+
+.author {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.author img {
+    object-fit: cover;
+    width: 34px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.author .name {
+    padding-top: 6px;
+    padding-left: 15px;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+
+.author a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding-left: 2px;
+}
+
+.main {
+    margin-top: 70px;
+    margin-bottom: 140PX;
+}
+
+.footer {
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: lightslategray;
+    background-color: transparent;
+}
+
+@media(max-width:375) {
+    .main {
+        width: 100%;
+        float: none;
+    }
+}
