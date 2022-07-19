@@ -4,80 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Product preview card component</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css">
+  <title>NFT Preview card component</title>
 </head>
 
 <body>
-  <main class="main-fol">
-    <div class="image-wrapper">
-      <img class="image" src="./images/image-product-desktop.jpg" alt="PERFUME">
+  <main class="main">
+    <div class="nft-image">
+      <img class="first-image" src="./images/image-equilibrium.jpg" alt="Equilibrium">
+      <div class="overlay">
+        <div class="viewport"><img src="./images/icon-view.svg" alt="Eye"></div>
+      </div>
     </div>
     <div class="container">
-      <header>
-        <h1 class="start">
-          PERFUME
-        </h1>
-      </header>
-      <p class="second">
-        Gabrielle Essence Eau De Parfum
-      </p>
-      <p class="third"> A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <div class="wrapper">
-        <p class="discount">
-          $149.99
-        </p>
-        <p class="rate">
-          $169.99
-        </p>
+      <h1 class="Equilibrium"> <a href="#"> Equilibrium #3429</a></h1>
+      <p class="para"> Our Equilibrium collection promotes balance and calm.</p>
+      <div class="flexbox">
+        <div class="etherum">
+          <p><img src="./images/icon-ethereum.svg" alt="icon-ethereum"></p>
+          <p class="price">0.041 ETH</p>
+        </div>
+        <div class="duration">
+          <p><img src="./images/icon-clock.svg" alt="icon-clock"></p>
+          <p class="time">3 days left</p>
+        </div>
       </div>
-      <div class="cart">
-        <p>
-          <img class="finish" src="./images/icon-cart.svg" alt="">
-        </p>
-        <p class="cart-text">
-          Add to Cart
-        </p>
+      <div class="line"></div>
+      <div class="author">
+        <p> <img src="./images/image-avatar.png" alt="author"></p>
+        <p class="name">Creation of <a href="#">Jules Wyvern</a></p>
       </div>
     </div>
   </main>
-
   <footer class="challenge">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor,</a>
-    Coded by <a href="https://www.frontendmentor.io/profile/arbaaz99" target="_blank">Arbaaz Khan.
-    </a>
+    Challenge by <a href="https://www.frontendmentor.io/home">frontendmentor</a>
+    Coded by <a href="https://www.frontendmentor.io/profile/arbaaz99"> Arbaaz Khan.</a>
   </footer>
-
 </body>
 
 </html>
-<!-- Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge,
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-text-decoration:strike
-opacity
-
-  Add to Cart -->
-
-<!-- <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer> -->
